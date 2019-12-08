@@ -1,0 +1,5 @@
+list_exam = 	[1, 2, 3, 4]
+tuple_exam = 	(1, "Will", [2, 4])
+dict_exam = 	{"Beijing": 1, "Shanghai": 2}
+set_exam =	 {1, 2, 3, 4}
+set_exam =	 set([1, 2, 3, 4])
