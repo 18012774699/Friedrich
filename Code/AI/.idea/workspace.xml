@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a72df5cf-d859-454b-9902-1ef556e648ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/Python_lib/Pandas/DataFrame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/Python_lib/Pandas/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/Python_lib/Pandas/plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml_flow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,24 +69,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AI/05-聚类/5_cluster_spectral.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
+            <state relative-caret-position="1564">
               <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ml_flow.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -151,6 +151,10 @@
         <option value="$PROJECT_DIR$/06-tensorflow/17_tensorboard.py" />
         <option value="$PROJECT_DIR$/AI.py" />
         <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/Python/Python_lib/Pandas/api.py" />
+        <option value="$PROJECT_DIR$/Python/Python_lib/Pandas/plot.py" />
+        <option value="$PROJECT_DIR$/Python/Python_lib/Pandas/DataFrame.py" />
+        <option value="$PROJECT_DIR$/ml_flow.py" />
       </list>
     </option>
   </component>
@@ -172,6 +176,16 @@
             <path>
               <item name="AI" type="b2602c69:ProjectViewProjectNode" />
               <item name="AI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AI" type="462c0819:PsiDirectoryNode" />
+              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AI" type="462c0819:PsiDirectoryNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,17 +336,17 @@
       <workItem from="1575469621193" duration="477000" />
       <workItem from="1575640826148" duration="1251000" />
       <workItem from="1575810001431" duration="44000" />
+      <workItem from="1575990368344" duration="278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194923000" />
+    <option name="totallyTimeSpent" value="195201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="313" y="2" width="1352" height="1031" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22987616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23374613" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -359,10 +373,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/10_using_optimizer.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/13_saving_model.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/15_modularity_.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/framework/ops.py" />
     <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/client/session.py" />
     <entry file="file://$PROJECT_DIR$/06-tensorflow/15_modularity.py" />
     <entry file="file://$PROJECT_DIR$/06-tensorflow/12_Softmax_regression.py" />
@@ -410,9 +420,6 @@
     <entry file="file://$PROJECT_DIR$/Python/Python/json_test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python_lib/01_python_library.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/Python_lib/Numpy/02_numpy.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -427,13 +434,6 @@
     <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/matplotlib/pyplot.py" />
     <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/matplotlib/axes/_axes.py" />
     <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/sklearn/utils/mocking.py" />
-    <entry file="file://$PROJECT_DIR$/AI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/pandas/core/frame.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3/six/moves/urllib/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
@@ -495,19 +495,41 @@
     <entry file="file://$PROJECT_DIR$/AI/05-聚类/5_cluster_spectral.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Pandas/api.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Pandas/plot.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Python_lib/01_python_library.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Pandas/DataFrame.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
+        <state relative-caret-position="1564">
           <caret line="68" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml_flow.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
