@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a72df5cf-d859-454b-9902-1ef556e648ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Python/Python_lib/Pandas/DataFrame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Python_lib/Pandas/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/Python_lib/Pandas/plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml_flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/Alexander.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/common/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/custom_class/encoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/custom_class/name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/supervised/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/Python_lib/01_python_library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Python_lib/python_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/housing/housing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/housing/housing.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Alexander/housing.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,27 +77,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ml_flow.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -103,102 +93,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/01-线性回归/polynomial_regression.py" />
-        <option value="$PROJECT_DIR$/01-线性回归/insurance.py" />
-        <option value="$PROJECT_DIR$/02-逻辑回归/logistic_regression.py" />
-        <option value="$PROJECT_DIR$/02-逻辑回归/2_logistic.py" />
-        <option value="$PROJECT_DIR$/02-逻辑回归/2_classify_music.py" />
-        <option value="$PROJECT_DIR$/Python/DataStructure.py" />
-        <option value="$PROJECT_DIR$/02-逻辑回归/3_neural_network.py" />
-        <option value="$PROJECT_DIR$/01-线性回归/02-梯度下降法/1_batch_gradient_descent.py" />
-        <option value="$PROJECT_DIR$/02-逻辑回归/1_logistic_regression.py" />
-        <option value="$PROJECT_DIR$/03-随机森林/iris_decision_tree.py" />
-        <option value="$PROJECT_DIR$/03-随机森林/iris_random_forest.py" />
-        <option value="$PROJECT_DIR$/03-随机森林/2_iris_random_forest.py" />
-        <option value="$PROJECT_DIR$/03-随机森林/4_decision_tree_regressor.py" />
-        <option value="$PROJECT_DIR$/03-随机森林/3_iris_bagging_tree.py" />
-        <option value="$PROJECT_DIR$/04-评估指标/mnist.py" />
-        <option value="$PROJECT_DIR$/04-评估指标/01-assessment.py" />
-        <option value="$PROJECT_DIR$/05-聚类/cluster_kmeans.py" />
-        <option value="$PROJECT_DIR$/05-聚类/2_cluster_images.py" />
-        <option value="$PROJECT_DIR$/05-聚类/1_cluster_kmeans.py" />
-        <option value="$PROJECT_DIR$/05-聚类/3_cluster_metrics.py" />
-        <option value="$PROJECT_DIR$/05-聚类/cluster_DBSCAN.py" />
-        <option value="$PROJECT_DIR$/05-聚类/4_cluster_DBSCAN.py" />
-        <option value="$PROJECT_DIR$/05-聚类/cluster_spectral.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/00_tensorflow_version.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/01_first_graph.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/02_better_session_run.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/03_global_variables_initializer.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/04_interactive_session.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/06_lifecycle.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/10_using_optimizer.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/05_manager_graph.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/07_linear_regression.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/08_manually_gradients.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/09_autodiff.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/11_placeholder.py" />
-        <option value="$PROJECT_DIR$/05-聚类/5_cluster_spectral.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/12_Softmax_regression.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/14_restoring_model.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/13_saving_model.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/15_modularity_.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/15_modularity.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/16_DNN.py" />
-        <option value="$PROJECT_DIR$/06-tensorflow/17_tensorboard.py" />
-        <option value="$PROJECT_DIR$/AI.py" />
-        <option value="$PROJECT_DIR$/demo.py" />
-        <option value="$PROJECT_DIR$/Python/Python_lib/Pandas/api.py" />
-        <option value="$PROJECT_DIR$/Python/Python_lib/Pandas/plot.py" />
-        <option value="$PROJECT_DIR$/Python/Python_lib/Pandas/DataFrame.py" />
-        <option value="$PROJECT_DIR$/ml_flow.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="313" />
-    <option name="y" value="2" />
-    <option name="width" value="1352" />
-    <option name="height" value="1031" />
-  </component>
+  <component name="ProjectId" id="1UyVSwMeXjIpKB6ELiBjPX8lAKQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AI" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AI" type="462c0819:PsiDirectoryNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -206,19 +120,7 @@
       <recent name="D:\AI\Code\AI\02-逻辑回归" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.09_super">
+  <component name="RunManager" selected="Python.python_version">
     <configuration name="09_super" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,12 +165,47 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="python_version" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Python_lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Python_lib/python_version.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.python_version" />
         <item itemvalue="Python.09_super" />
         <item itemvalue="Python.demo" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -337,199 +274,49 @@
       <workItem from="1575640826148" duration="1251000" />
       <workItem from="1575810001431" duration="44000" />
       <workItem from="1575990368344" duration="278000" />
+      <workItem from="1576328833343" duration="2685000" />
+      <workItem from="1576397307779" duration="3419000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195201000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="313" y="2" width="1352" height="1031" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23374613" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499031" weight="0.2817372" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31403118" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500969" side_tool="true" weight="0.32516703" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.29955456" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32817337" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32817337" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/client/session.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/15_modularity.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/12_Softmax_regression.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-827980300/numpy/core/multiarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="4210" column="8" selection-start-line="4210" selection-start-column="8" selection-end-line="4210" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-827980300/pandas/_libs/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="1501" column="15" selection-start-line="1501" selection-start-column="8" selection-end-line="1501" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/ops/nn_ops.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/checkpoint" />
-    <entry file="file://$PROJECT_DIR$/05-聚类/1_cluster_kmeans.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/00_tensorflow_version.py" />
-    <entry file="file://$PROJECT_DIR$/03-随机森林/1_iris_decision_tree.py" />
-    <entry file="file://$PROJECT_DIR$/03-随机森林/2_iris_random_forest.py" />
-    <entry file="file://$PROJECT_DIR$/04-评估指标/01-assessment.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/ops/gen_nn_ops.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/ops/gen_array_ops.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/16_DNN.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/Lib/site-packages/numpy/core/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/17_tensorboard.py" />
-    <entry file="file://$PROJECT_DIR$/06-tensorflow/14_restoring_model.py" />
-    <entry file="file://$PROJECT_DIR$/05-聚类/5_cluster_spectral.py" />
-    <entry file="file://$PROJECT_DIR$/AI/05-聚类/1_cluster_kmeans.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AI/05-聚类/4_cluster_DBSCAN.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/json_test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Numpy/02_numpy.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Numpy/04_numpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/pandas/plotting/_core.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/matplotlib/pyplot.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/matplotlib/axes/_axes.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/sklearn/utils/mocking.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/site-packages/pandas/core/frame.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3/six/moves/urllib/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/tarfile.py" />
-    <entry file="file://$PROJECT_DIR$/../../Anaconda3/envs/tensorflow/Lib/os.py" />
-    <entry file="file://$PROJECT_DIR$/Python/Python/hello.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/11_Enum.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/08_str.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/04_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/05_private.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/06_property.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/02_class_attr.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/03_call.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/09_super.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python/3_Class/07_inherit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AI/05-聚类/5_cluster_spectral.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Pandas/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Pandas/plot.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python_lib/01_python_library.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Python_lib/Pandas/DataFrame.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_flow.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="560" y="111" key="CommitChangelistDialog2" timestamp="1576330132387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576330132387" />
+    <state width="1340" height="223" key="GridCell.Tab.0.bottom" timestamp="1576405262086">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262086" />
+    <state width="1340" height="223" key="GridCell.Tab.0.center" timestamp="1576405262085">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="223" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262085" />
+    <state width="1340" height="223" key="GridCell.Tab.0.left" timestamp="1576405262085">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="223" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262085" />
+    <state width="1340" height="223" key="GridCell.Tab.0.right" timestamp="1576405262085">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="223" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262085" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1576397953927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576397953927" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576397317295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576397317295" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1576398158701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576398158701" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AI$python_version.coverage" NAME="python_version Coverage Results" MODIFIED="1576405031374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/Python_lib" />
   </component>
 </project>
