@@ -6,6 +6,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedShuffleSplit
 from pandas.plotting import scatter_matrix
 from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.preprocessing import LabelBinarizer
 from ml_flow.common import base as cb
 from ml_flow.supervised import base as sb
 from ml_flow.common import pipeline as cp
@@ -157,8 +159,26 @@ if __name__ == '__main__':
     # 选择并训练模型
     # 模型性能、准确性、过拟合
     # 训练集的评分比验证集的评分低很多，表示模型过拟合
-    sm.choose_model(housing_prepared, housing_labels)
+    # sm.choose_model(housing_prepared, housing_labels)
 
     # 模型微调
-    sm.fine_tune_model(housing_prepared, housing_labels)
+    param_grid = [
+        {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8]},
+        {'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
+    ]
+    forest_reg = RandomForestRegressor()
+    grid_search = sm.fine_tune_model(housing_prepared, housing_labels, forest_reg, param_grid)
+    print(grid_search.best_params_)
+    print(grid_search.best_estimator_)
 
+    cv_res = grid_search.cv_results_
+    for mean_score, params in zip(cv_res["mean_test_score"], cv_res["params"]):
+        print(np.sqrt(-mean_score), params)
+
+    encoder = LabelBinarizer()
+    housing_cat_1hot = encoder.fit_transform(housing["ocean_proximity"])
+    feature_importances = grid_search.best_estimator_.feature_importances_
+    extra_attribs = ["rooms_per_hhold", "pop_per_hhold", "bedrooms_per_room"]
+    cat_one_hot_attribs = list(encoder.classes_)
+    attributes = list(housing.drop("ocean_proximity", axis=1)) + extra_attribs + cat_one_hot_attribs
+    print(sorted(zip(feature_importances, attributes), reverse=True))

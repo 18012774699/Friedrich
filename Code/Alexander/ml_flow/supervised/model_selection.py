@@ -5,6 +5,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 
 
 class MyCrossValidation:
@@ -53,12 +54,13 @@ def choose_model(data_prepared, labels, scoring: str = "neg_mean_squared_error",
 
 
 # =============================模型微调=============================
-def fine_tune_model(data_prepared, labels):
-    param_grid = [
-        {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8]},
-        {'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
-    ]
-    forest_reg = RandomForestRegressor()
-
-    grid_search = GridSearchCV(forest_reg, param_grid, cv=5, scoring='neg_mean_squared_error')
+def fine_tune_model(data_prepared, labels, regression, param):
+    # 网格搜索，会训练每个模型五次（因为用的是五折交叉验证）
+    # 如果GridSearchCV是以（默认值）refit=True开始运行的，则一旦用交叉验证找到了最佳的估计量，就会在整个训练集上重新训练
+    grid_search = GridSearchCV(regression, param, cv=5, scoring='neg_mean_squared_error')
     grid_search.fit(data_prepared, labels)
+
+    # randomized_search = RandomizedSearchCV(regression, 10, 1000)
+    return grid_search
+
+
