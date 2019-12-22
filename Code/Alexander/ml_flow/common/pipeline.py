@@ -63,6 +63,7 @@ def data_cleaning(features: pd.DataFrame, fill_strategy: str, text_column: list)
 
 
 # ========================转换Pipeline========================
+# 操作过程：先实例化、fit(param)、transform(param)
 # 数据清洗、处理文本和分类属性、自定义操作、特征缩放
 def create_features_transform_pipeline(features: pd.DataFrame, fill_strategy: str, text_column: list,
                                        scale_type: str = "normalization",

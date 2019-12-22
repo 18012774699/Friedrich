@@ -6,6 +6,11 @@ from sklearn.linear_model import SGDRegressor
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import Ridge
+from sklearn.linear_model import Lasso
+from sklearn.linear_model import ElasticNet
+from sklearn.base import clone
+from sklearn.preprocessing import StandardScaler
 
 
 # 正态方程
@@ -122,11 +127,62 @@ def polynomial_regression():
     plot_learning_curves(lin_reg, X, y)
 
 
+# 岭回归
+def ridge_regression():
+    # 模拟数据
+    X = 2 * np.random.rand(1000, 1)
+    y = 4 + 3 * X + np.random.randn(1000, 1)
+
+    # 岭回归的封闭方程的解
+    ridge_reg = Ridge(alpha=1, solver="cholesky")
+    ridge_reg.fit(X, y)
+    print(ridge_reg.predict([[1.5]]))
+
+    # 使用随机梯度法进行求解
+    sgd_reg = SGDRegressor(penalty="l2")
+    sgd_reg.fit(X, y.ravel())
+    print(sgd_reg.predict([[1.5]]))
+
+
+# 早期停止法
+def early_stopping():
+    # 模拟数据
+    m = 100
+    X = 6 * np.random.rand(m, 1) - 3  # [-3,3)
+    y = 0.5 * X ** 2 + X + 2 + np.random.randn(m, 1)
+
+    scaler = StandardScaler()
+    scaler.fit(X)
+    X_scaled = scaler.transform(X)
+    X_train_poly_scaled, X_val_poly_scaled, y_train, y_val = train_test_split(X_scaled, y, test_size=0.2)
+
+    # 当warm_start=True时，调用fit()方法后，训练会从停下来的地方继续，而不是从头重新开始。
+    sgd_reg = SGDRegressor(max_iter=1, warm_start=True, penalty=None, learning_rate="constant", eta0=0.0005)
+
+    minimum_val_error = float("inf")
+    best_epoch = None
+    best_model = None
+    for epoch in range(1000):
+        sgd_reg.fit(X_train_poly_scaled, y_train.ravel())
+        y_val_predict = sgd_reg.predict(X_val_poly_scaled)
+        val_error = mean_squared_error(y_val_predict, y_val)
+        if val_error < minimum_val_error:
+            minimum_val_error = val_error
+            best_epoch = epoch
+            best_model = clone(sgd_reg)
+    return best_model, best_epoch
+
+
 if __name__ == "__main__":
     # 线性回归
     # linear_regression()
 
     # 多项式回归
-    polynomial_regression()
+    # polynomial_regression()
 
+    # 岭回归
+    # ridge_regression()
 
+    # 早期停止法
+    best_model, best_epoch = early_stopping()
+    print(best_epoch, best_model)
