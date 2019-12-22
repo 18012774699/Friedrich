@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a72df5cf-d859-454b-9902-1ef556e648ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/Alexander.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/common/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/custom_class/encoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/custom_class/name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Alexander/ml_flow/supervised/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Alexander/case/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/Python_lib/01_python_library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Python_lib/python_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/housing/housing.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/housing/housing.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Alexander/housing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Alexander/housing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Alexander/case/housing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +87,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -120,7 +107,29 @@
       <recent name="D:\AI\Code\AI\02-逻辑回归" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.python_version">
+  <component name="RunManager" selected="Python.01-assessment">
+    <configuration name="01-assessment" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AI/04-评估指标" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AI/04-评估指标/01-assessment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="09_super" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,6 +198,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01-assessment" />
         <item itemvalue="Python.python_version" />
         <item itemvalue="Python.09_super" />
         <item itemvalue="Python.demo" />
@@ -276,6 +286,7 @@
       <workItem from="1575990368344" duration="278000" />
       <workItem from="1576328833343" duration="2685000" />
       <workItem from="1576397307779" duration="3419000" />
+      <workItem from="1576766530207" duration="553000" />
     </task>
     <servers />
   </component>
@@ -287,22 +298,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="560" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576330132387" />
-    <state width="1340" height="223" key="GridCell.Tab.0.bottom" timestamp="1576405262086">
+    <state width="1340" height="223" key="GridCell.Tab.0.bottom" timestamp="1576767083353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262086" />
-    <state width="1340" height="223" key="GridCell.Tab.0.center" timestamp="1576405262085">
+    <state width="1340" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576767083353" />
+    <state width="1340" height="223" key="GridCell.Tab.0.center" timestamp="1576767083353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="223" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262085" />
-    <state width="1340" height="223" key="GridCell.Tab.0.left" timestamp="1576405262085">
+    <state width="1340" height="223" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576767083353" />
+    <state width="1340" height="223" key="GridCell.Tab.0.left" timestamp="1576767083353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="223" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262085" />
-    <state width="1340" height="223" key="GridCell.Tab.0.right" timestamp="1576405262085">
+    <state width="1340" height="223" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576767083353" />
+    <state width="1340" height="223" key="GridCell.Tab.0.right" timestamp="1576767083353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="223" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576405262085" />
+    <state width="1340" height="223" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576767083353" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1576397953927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -318,5 +329,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AI$python_version.coverage" NAME="python_version Coverage Results" MODIFIED="1576405031374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/Python_lib" />
+    <SUITE FILE_PATH="coverage/AI$01_assessment.coverage" NAME="01-assessment Coverage Results" MODIFIED="1576766642719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI/04-评估指标" />
   </component>
 </project>
