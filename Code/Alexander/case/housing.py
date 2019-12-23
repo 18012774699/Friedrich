@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelBinarizer
 from ml_flow.common import base as cb
 from ml_flow.supervised import base as sb
-from ml_flow.common import pipeline as cp
+from ml_flow.common import data_processor as cd
 from ml_flow.supervised import model_selection as sm
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
@@ -149,7 +149,7 @@ if __name__ == '__main__':
 
     # 转换Pipeline: 数据清洗、处理文本和分类属性、自定义操作、特征缩放(标准化)
     # 自定义添加rooms_per_household、population_per_household、bedrooms_per_room
-    full_pipeline = cp.create_features_transform_pipeline(housing, fill_strategy="median",
+    full_pipeline = cd.create_features_transform_pipeline(housing, fill_strategy="median",
                                                           text_column=["ocean_proximity"], scale_type="std_scaler",
                                                           customized_transform=CombinedAttributesAdder())
 
@@ -162,19 +162,22 @@ if __name__ == '__main__':
     # sm.choose_model(housing_prepared, housing_labels)
 
     # 模型微调
-    param_grid = [
-        {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8]},
-        {'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
-    ]
+    param_dist = {
+        'bootstrap': [True, False],
+        'n_estimators': range(3, 30, 1),
+        'max_features': range(2, 8, 1),
+        'max_depth': range(2, 15, 1),
+    }
     forest_reg = RandomForestRegressor()
-    grid_search = sm.fine_tune_model(housing_prepared, housing_labels, forest_reg, param_grid)
+    grid_search = sm.fine_tune_model(housing_prepared, housing_labels, forest_reg, param_dist)
     print(grid_search.best_params_)
     print(grid_search.best_estimator_)
 
-    cv_res = grid_search.cv_results_
-    for mean_score, params in zip(cv_res["mean_test_score"], cv_res["params"]):
-        print(np.sqrt(-mean_score), params)
+    # cv_res = grid_search.cv_results_
+    # for mean_score, params in zip(cv_res["mean_test_score"], cv_res["params"]):
+    #     print(np.sqrt(-mean_score), params)
 
+    # 特征重要性排序
     encoder = LabelBinarizer()
     housing_cat_1hot = encoder.fit_transform(housing["ocean_proximity"])
     feature_importances = grid_search.best_estimator_.feature_importances_
@@ -182,3 +185,16 @@ if __name__ == '__main__':
     cat_one_hot_attribs = list(encoder.classes_)
     attributes = list(housing.drop("ocean_proximity", axis=1)) + extra_attribs + cat_one_hot_attribs
     print(sorted(zip(feature_importances, attributes), reverse=True))
+
+    # 用测试集评估系统
+    final_model = grid_search.best_estimator_
+    from sklearn.metrics import mean_squared_error
+    X_test = strat_test_set.drop("median_house_value", axis=1)
+    y_test = strat_test_set["median_house_value"].copy()
+    X_test_prepared = full_pipeline.transform(X_test)
+
+    final_predictions = final_model.predict(X_test_prepared)
+    final_mse = mean_squared_error(y_test, final_predictions)
+    final_rmse = np.sqrt(final_mse)
+    print(final_rmse)  # => evaluates to 48,209.6
+

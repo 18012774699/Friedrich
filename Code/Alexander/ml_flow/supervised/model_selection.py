@@ -20,10 +20,10 @@ class MyCrossValidation:
     # 过拟合：训练集的评分比验证集的评分低很多，表示模型过拟合
     # 模型性能：RMSE小
     # 准确性：标准差小
-    def display_evaluation_indicator(self, regression, print_type:str):
+    def display_evaluation_indicator(self, regression, print_type: str):
         regression.fit(self.data_prepared, self.labels)
         predictions = regression.predict(self.data_prepared)
-        mse = mean_squared_error(self.labels, predictions)      # 计算MSE
+        mse = mean_squared_error(self.labels, predictions)  # 计算MSE
         rmse = np.sqrt(mse)
         print(print_type, ":")
         print('Train set rmse: ', rmse)
@@ -54,13 +54,13 @@ def choose_model(data_prepared, labels, scoring: str = "neg_mean_squared_error",
 
 
 # =============================模型微调=============================
-def fine_tune_model(data_prepared, labels, regression, param):
-    # 网格搜索，会训练每个模型五次（因为用的是五折交叉验证）
+def fine_tune_model(data_prepared, labels, regression, param, mode: str = 'randomized', n_iter: int = 100):
+    # n_iter=300，训练300次，数值越大，获得的参数精度越大，但是搜索时间越长
+    # n_jobs = -1，使用所有的CPU进行训练，默认为1，使用1个CPU
     # 如果GridSearchCV是以（默认值）refit=True开始运行的，则一旦用交叉验证找到了最佳的估计量，就会在整个训练集上重新训练
-    grid_search = GridSearchCV(regression, param, cv=5, scoring='neg_mean_squared_error')
-    grid_search.fit(data_prepared, labels)
-
-    # randomized_search = RandomizedSearchCV(regression, 10, 1000)
-    return grid_search
-
-
+    if mode == 'randomized':
+        model_selection = RandomizedSearchCV(regression, param, cv=5, scoring='neg_mean_squared_error', n_iter=n_iter)
+    else:
+        model_selection = GridSearchCV(regression, param, cv=5, scoring='neg_mean_squared_error')
+    model_selection.fit(data_prepared, labels)
+    return model_selection
