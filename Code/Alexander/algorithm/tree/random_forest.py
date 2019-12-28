@@ -3,8 +3,10 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import BaggingClassifier
 from sklearn.datasets import make_moons
 from sklearn.model_selection import train_test_split
+from sklearn.datasets import load_iris
 
-if __name__ == "__main__":
+
+def random_forest():
     # 生成月亮数据集
     X, y = make_moons(n_samples=1000, noise=0.3)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -16,4 +18,18 @@ if __name__ == "__main__":
 
     rnd_clf.fit(X_train, y_train)
     y_pred_rf = rnd_clf.predict(X_test)
+
+
+def feature_importances():
+    iris = load_iris()
+    rnd_clf = RandomForestClassifier(n_estimators=500, n_jobs=-1)
+    rnd_clf.fit(iris["data"], iris["target"])
+    for name, score in zip(iris["feature_names"], rnd_clf.feature_importances_):
+        print(name, score)
+
+
+if __name__ == "__main__":
+    random_forest()
+
+    feature_importances()
 
