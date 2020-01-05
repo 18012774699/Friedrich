@@ -26,6 +26,7 @@ with graph.as_default():
     X = tf.constant(scaled_housing_data_plus_bias, dtype=tf.float32, name="X")
     y = tf.constant(housing.target.reshape(-1, 1), dtype=tf.float32, name="y")
     theta = tf.Variable(tf.compat.v1.random_uniform([n + 1, 1], -1.0, 1.0), name="theta")
+
     y_pred = tf.matmul(X, theta, name="predictions")
     error = y_pred - y
     mse = tf.reduce_mean(tf.square(error), name="mse")
@@ -34,11 +35,13 @@ with graph.as_default():
     # gradients = tf.gradients(mse, [theta])[0]       # Using autodiﬀ
     # training_op = tf.compat.v1.assign(theta, theta - learning_rate * gradients)
 
+    # 使用优化器，哪里对theta赋值
     # optimizer = tf.compat.v1.train.GradientDescentOptimizer(learning_rate=learning_rate)
     optimizer = tf.compat.v1.train.MomentumOptimizer(learning_rate=learning_rate, momentum=0.9)
     training_op = optimizer.minimize(mse)
 
     init = tf.compat.v1.global_variables_initializer()
+    saver = tf.compat.v1.train.Saver()
 
 with tf.compat.v1.Session(graph=graph) as sess:
     sess.run(init)
@@ -46,5 +49,8 @@ with tf.compat.v1.Session(graph=graph) as sess:
         learning_rate = t0 / (epoch*m + t1)
         if epoch % 100 == 0:
             print("Epoch", epoch, ", MSE =", mse.eval())
+            save_path = saver.save(sess, "/tmp/my_model.ckpt")
         sess.run(training_op)
+    save_path = saver.save(sess, "/tmp/my_model_final.ckpt")  # 找到tmp文件夹就找到文件了
     best_theta = theta.eval()
+    print(best_theta)
