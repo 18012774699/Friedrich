@@ -1,4 +1,4 @@
-# from sklearn.datasets import fetch_openml
+from sklearn.datasets import fetch_openml
 from sklearn.datasets import fetch_mldata
 import matplotlib
 import matplotlib.pyplot as plt
