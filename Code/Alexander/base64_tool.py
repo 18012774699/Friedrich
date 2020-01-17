@@ -51,12 +51,12 @@ def read_base64_from_file():
 
 
 if __name__ == "__main__":
-    encrypt_file = 'bookmarks_2020_1_11.rar'
+    encrypt_file = 'bookmarks_2020_1_15.rar'
     decrypt_file = 'bookmarks.rar'
 
     # 加密
     # .rar -> base64
-    print_long_str_to_file(file_to_base64(encrypt_file))
+    # print_long_str_to_file(file_to_base64(encrypt_file))
 
     # 解密
-    # base64_to_file(read_base64_from_file(), decrypt_file)
+    base64_to_file(read_base64_from_file(), decrypt_file)

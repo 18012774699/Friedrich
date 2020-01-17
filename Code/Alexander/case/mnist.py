@@ -1,5 +1,5 @@
 from sklearn.datasets import fetch_openml
-from sklearn.datasets import fetch_mldata
+# from sklearn.datasets import fetch_mldata
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -64,8 +64,8 @@ def performance_evaluation():
 
 
 if __name__ == "__main__":
-    # mnist = fetch_openml('mnist_784', data_home="../datasets")
-    mnist = fetch_mldata('MNIST original', data_home="../datasets")
+    mnist = fetch_openml('mnist_784', data_home="../datasets")
+    # mnist = fetch_mldata('MNIST original', data_home="../datasets")
     print(mnist)
 
     X, y = mnist["data"], mnist["target"]
