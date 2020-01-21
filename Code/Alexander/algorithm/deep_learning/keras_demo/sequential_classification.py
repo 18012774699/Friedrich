@@ -2,7 +2,7 @@ from tensorflow import keras
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from keras import backend as K
+# from keras import backend as K
 
 fashion_mnist = keras.datasets.fashion_mnist
 (X_train_full, y_train_full), (X_test, y_test) = fashion_mnist.load_data()
@@ -21,7 +21,8 @@ class_names = ["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
 model = keras.models.Sequential()
 model.add(keras.layers.Flatten(input_shape=[28, 28]))
 # model.add(keras.layers.InputLayer(input_shape=[28, 28]))
-model.add(keras.layers.Dense(300, activation=K.relu))
+# model.add(keras.layers.Dense(300, activation=K.relu))
+model.add(keras.layers.Dense(300, activation=keras.activations.relu))
 model.add(keras.layers.Dense(100, activation=keras.activations.relu))
 model.add(keras.layers.Dense(10, activation="softmax"))
 

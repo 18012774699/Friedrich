@@ -28,9 +28,9 @@ import sklearn
 
 print('sklearn: %s' % sklearn.__version__)
 
-import theano
+# import theano
 
-print('theano: %s' % theano.__version__)
+# print('theano: %s' % theano.__version__)
 
 import keras
 
