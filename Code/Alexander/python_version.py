@@ -32,9 +32,9 @@ print('sklearn: %s' % sklearn.__version__)
 
 # print('theano: %s' % theano.__version__)
 
-import keras
+# import keras
 
-print('keras: %s' % keras.__version__)
+# print('keras: %s' % keras.__version__)
 
 import tensorflow
 
