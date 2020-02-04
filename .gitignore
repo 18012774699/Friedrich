@@ -1,0 +1,16 @@
+/Code/Alexander/ml_flow/supervised/__pycache__/*.pyc
+/Code/Alexander/ml_flow/__pycache__/*.pyc
+/Code/Alexander/ml_flow/common/__pycache__/*.pyc
+/Code/Alexander/ml_flow/custom_class/__pycache__/*.pyc
+/Code/Alexander/.idea/*.xml
+/Code/AI/.idea
+/Code/Alexander/.idea
+/Code/Tool/.idea/*.xml
+/Code/Tool/.idea/*.iml
+/Code/Tool/.idea/*.gitignore
+/*.gitignore
+/Code/Tool/.idea/inspectionProfiles/*.xml
+/Code/Alexander/algorithm/tree/*.dot
+/Code/Alexander/algorithm/supervised/tree/*.dot
+/Code/Alexander/datasets/openml/openml.org/api/v1/json/data/*.gz
+/Code/Alexander/test.py
